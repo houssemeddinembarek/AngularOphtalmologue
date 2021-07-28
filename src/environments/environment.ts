@@ -3,7 +3,21 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiBaseUrl:'http://localhost:8091',
+
+  firebase:{
+    apiKey: "AIzaSyDx4buBR-ceXhR1Fe3NTb0z_sOsqrxyp3Q",
+    authDomain: "ophtalmo-75a1b.firebaseapp.com",
+    databaseURL: "https://ophtalmo-75a1b-default-rtdb.firebaseio.com",
+    projectId: "ophtalmo-75a1b",
+    storageBucket: "ophtalmo-75a1b.appspot.com",
+    messagingSenderId: "2396662471",
+    appId: "1:2396662471:web:c071ec2cf21d12a191ace2",
+    measurementId: "G-G8BQ5XBRYG"
+
+  }
+  
 };
 
 /*

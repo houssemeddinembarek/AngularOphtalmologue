@@ -1,0 +1,38 @@
+<div class="cart-item d-md-flex justify-content-between">
+       <!-- <button class="remove-item"> <i class="fa fa-times" (click)="ondelete(productItem.id)"></i></button> -->
+   
+    <div class="px-3 my-3">
+        <a class="cart-item-product" href="#">
+            <div class="cart-item-product-thumb"><img src="{{productItem.image}}" alt="Product"></div>
+            <div class="cart-item-product-info">
+                <h4 class="cart-item-product-title">{{productItem.name}}</h4><span><strong>Description:</strong> {{productItem.description | truncate}}</span>
+            </div>
+        </a>
+    </div>
+    <div class="px-3 my-3 text-center">
+        <div class="cart-item-label">Quantity</div>
+        <div class="count-input">
+            <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+        </div>
+    </div>
+    <div class="px-2 my-2 text-center">
+        <div class="cart-item-label">Price</div><span class="text-xl font-weight-medium">${{productItem.price}}</span>
+    </div>
+    <div class="px-2 my-2 text-center">
+        <div class="cart-item-label">Discount</div><span class="text-xl font-weight-medium">$15.00</span>
+    </div>
+    <div class="px-2 my-2 row">
+        <div class="col-md-2">
+            <button class="btn btn-primary" routerLink="/product/{{productItem.id}}" >Edit </button>    
+            <button class="btn btn-danger mt-3">Delete</button>
+        </div>
+      
+    </div>
+</div>

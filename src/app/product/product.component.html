@@ -1,0 +1,20 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container pb-5 mb-2 t" >
+    <!-- Cart Item-->
+    
+    <div *ngFor="let product of products">
+        <app-product-item [productItem]="product"></app-product-item>
+    </div>
+  
+   
+    <!-- Buttons-->
+
+
+     <hr class="my-2">
+    <div class="row pt-3 pb-5 mb-2">
+        <!-- <div class="col-sm-6 mb-3"><a class="btn btn-style-1 btn-secondary btn-block" href="#"><i class="fe-icon-refresh-ccw"></i>&nbsp;Update </a></div> -->
+        <div class="col-sm-6 mb-3"><a class="btn btn-style-1 btn-primary btn-block" routerLink="/addproduct" href="checkout-address.html"><i class="fe-icon-credit-card"></i>&nbsp;Ajouter un produit</a></div>
+   
+
+       
+    </div>
